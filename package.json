@@ -1,7 +1,7 @@
 {
-  "name": "mern-tutorial",
+  "name": "thetaxihub-server",
   "version": "1.0.0",
-  "description": "Goalsetter app for youtube tutorial",
+  "description": "Backend API for the taxi hub website",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
@@ -10,11 +10,17 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "Brad Traversy",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluetailevents/the-taxi-hub-frontend.git"
+  },
+  "author": "Gavin Blue",
+  "license": "ISC",
+  "bugs": {},
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
