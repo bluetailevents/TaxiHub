@@ -10,8 +10,8 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm --prefix frontend run build",
-    "postinstall": "npm install && npm --prefix frontend install"
-  }
+    "postinstall": "npm --prefix frontend install"
+  }  
 ,
   "repository": {
     "type": "git",
