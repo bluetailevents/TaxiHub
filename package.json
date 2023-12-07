@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backend API for the taxi hub website",
   "main": "server.js",
+  "homepage": ".",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
