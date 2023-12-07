@@ -19,7 +19,6 @@ function ContentWindow() {
     const option = useSelector(state => state.sections.option);
     const level = useSelector(state => state.sections.level);
     const timer = useSelector(state => state.sections.timer);
-    const finishButton = useSelector(state => state.actions.finishButton); // Update this line
     const [start, setStart] = useState(false);
 
     const handleFinish = () => {

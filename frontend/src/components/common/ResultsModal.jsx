@@ -53,7 +53,7 @@ const ResultsModal = ({ isOpen, onClose, finalResults }) => {
                         const sortedUserAnswers = [...userAnswers].sort();
                         const sortedCorrectAnswers = [...correctAnswers].sort();
                         const isCorrect = JSON.stringify(sortedUserAnswers) === JSON.stringify(sortedCorrectAnswers);
-
+    
                         if (isCorrect) {
                             return (
                                 <div key={index}>
@@ -64,6 +64,7 @@ const ResultsModal = ({ isOpen, onClose, finalResults }) => {
                         }
                         return null;
                     }
+                    return null; // Added to handle cases where the condition is not met
                 })}
                 <button onClick={() => setShowIncorrect(!showIncorrect)}>
                     {showIncorrect ? 'Hide Incorrect Answers' : 'Show Incorrect Answers'}
@@ -74,7 +75,7 @@ const ResultsModal = ({ isOpen, onClose, finalResults }) => {
                         const sortedUserAnswers = [...userAnswers].sort();
                         const sortedCorrectAnswers = [...correctAnswers].sort();
                         const isCorrect = JSON.stringify(sortedUserAnswers) === JSON.stringify(sortedCorrectAnswers);
-
+    
                         if (!isCorrect) {
                             return (
                                 <div key={index}>
@@ -86,6 +87,7 @@ const ResultsModal = ({ isOpen, onClose, finalResults }) => {
                         }
                         return null;
                     }
+                    return null; // Added to handle cases where the condition is not met
                 })}
                 <button onClick={onClose} className="modal-close-button">
                     Close
@@ -93,6 +95,7 @@ const ResultsModal = ({ isOpen, onClose, finalResults }) => {
             </div>
         </Modal>
     );
+    
 };
 
 export default ResultsModal;

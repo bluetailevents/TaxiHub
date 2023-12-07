@@ -53,10 +53,6 @@ function Table({ modalIsOpen, setModalIsOpen }) {
         setModalIsOpen(true);
     };
 
-    const closeModal = () => {
-        setModalIsOpen(false);
-    };
-
 
 
     return (

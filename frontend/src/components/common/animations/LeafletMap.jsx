@@ -98,6 +98,7 @@ const LeafletMap = ({ mapsData }) => {
                             );
                         }
                     }
+                    return null; // Added to handle cases where the condition is not met
                 })}
             </MapContainer>
             {!isLoading && features && features.length > 0 && (

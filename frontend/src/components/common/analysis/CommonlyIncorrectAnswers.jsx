@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Bar } from 'react-chartjs-2';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import'../../../css/CommonIncorrectAnswers.css';
 
