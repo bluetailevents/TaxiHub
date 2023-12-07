@@ -9,8 +9,10 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "npm --prefix frontend run build"
-  },
+    "build": "npm --prefix frontend run build",
+    "postinstall": "npm install && npm --prefix frontend install"
+  }
+,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluetailevents/the-taxi-hub-frontend.git"
