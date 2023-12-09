@@ -4,11 +4,11 @@
   "description": "Backend API for the taxi hub website",
   "main": "server.js",
   "homepage": ".",
-    "scripts": {
-      "start": "node backend/server.js",
-      "server": "nodemon backend/server.js",
-      "build": " npm run build"
-    },
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build": " npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluetailevents/the-taxi-hub-frontend.git"
@@ -21,7 +21,7 @@
     "body-parser": "*",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
-    "express": "*",
+    "express": "^4.17.1",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.9"
