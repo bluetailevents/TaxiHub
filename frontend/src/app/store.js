@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import thunk from 'redux-thunk';
+import { thunk } from 'redux-thunk'; // Corrected import statement
 import authReducer from '../features/auth/authSlice';
 import goalReducer from '../features/goals/goalSlice';
 import vacanciesReducer from '../features/vacancies/vacancySlice';
@@ -29,4 +29,3 @@ export const store = configureStore({
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(thunk, actionLogger),
 });
-

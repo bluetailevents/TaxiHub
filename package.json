@@ -11,8 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm --prefix frontend run build",
     "postinstall": "npm --prefix frontend install"
-  }  
-,
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bluetailevents/the-taxi-hub-frontend.git"
@@ -22,18 +21,18 @@
   "bugs": {},
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "*",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
-    "dotenv": "^15.0.0",
-    "express":"*",
-    "body-parser":"*",
+    "express": "*",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.9"
   },
   "devDependencies": {
-    "concurrently": "^7.0.0",
-    "nodemon": "^2.0.15",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.3.1",
+    "nodemon": "^2.0.15"
   }
 }
